@@ -1,0 +1,44 @@
+{
+  "ProductGallery": [
+    {
+      "id": 1,
+      "image": "/figma-images/babyToy.png"
+    },
+    {
+      "id": 2,
+      "image": "/figma-images/TV.png"
+    },
+    {
+      "id": 3,
+      "image": "/figma-images/diningSet.png"
+    },
+    {
+      "id": 4,
+      "image": "/figma-images/whiteHeadPhone.png"
+    },
+    {
+      "id": 5,
+      "image": "/figma-images/babyBiock.png"
+    },
+    {
+      "id": 6,
+      "image": "public/figma-images/makeup.png"
+    },
+    {
+      "id": 7,
+      "image": "/figma-images/vegetables.png"
+    },
+    {
+      "id": 8,
+      "image": "public/figma-images/dress.png"
+    },
+    {
+      "id": 9,
+      "image": "/figma-images/jacket.png"
+    },
+    {
+      "id": 10,
+      "image": "/figma-images/shoe.png"
+    }
+  ]
+}

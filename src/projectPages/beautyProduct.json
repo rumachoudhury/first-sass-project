@@ -1,0 +1,20 @@
+{
+  "beautyProducts": [
+    {
+      "id": 1,
+      "image": "/figma-images/Image.png"
+    },
+    {
+      "id": 2,
+      "image": "/figma-images/image(1).png"
+    },
+    {
+      "id": 3,
+      "image": "/figma-images/shopping.png"
+    },
+    {
+      "id": 4,
+      "image": "/figma-images/image(1).png"
+    }
+  ]
+}

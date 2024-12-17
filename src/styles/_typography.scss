@@ -1,0 +1,16 @@
+// copied from figms
+.primary-heading {
+  font-family: $poppins;
+  font-size: $primary-heading; //call the $primary-heading
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}

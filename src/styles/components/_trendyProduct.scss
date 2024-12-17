@@ -1,0 +1,164 @@
+@import "../variables";
+@import "../mixins";
+.trendy-heading {
+  text-align: center;
+  font-size: 40px;
+  font-family: $poppins;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #3a3a3a;
+}
+
+.trendy-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.trendy-card {
+  position: relative;
+  background-color: #2f2f2f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+
+  .trendy-products .trendy-card:nth-child(7) {
+    margin-top: 30px;
+  }
+}
+
+.trendy-product-image {
+  position: relative;
+  width: 100%;
+  height: 300px; // Ensure consistent image height
+  overflow: hidden;
+}
+
+.trendy-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 10;
+  width: 80px; // Adjust size to fit image properly
+  height: 40px; // Fix height to maintain consistent badge size
+}
+
+.trendy-button {
+  position: absolute;
+  //   bottom: 40px;
+  top: 40%;
+  left: 60%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 80%; // Adjust width to fit the image
+
+  button {
+    padding: 15px;
+    background-color: #ffffff;
+    color: red;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%; // Ensures full-width button
+
+    // &:hover {
+    //   background-color: #6a6865;
+    // }
+  }
+}
+
+.icon-area {
+  position: absolute;
+  top: 52%;
+  left: 30%;
+  z-index: 5;
+
+  .action-icons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      cursor: pointer;
+      color: white;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      span {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+.trendy-product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+
+.trendy-product-title {
+  //   font-size: 1.2rem;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.trendy-product-description {
+  //   font-size: 0.9rem;
+  font-size: 16px;
+  color: #ffffffb2;
+  margin-bottom: 1rem;
+}
+
+.trendy-product-price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  .current-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .previous-price {
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    color: #999;
+  }
+}
+
+.trendy-down-button button {
+  background-color: #027bff;
+  border: none;
+  border-radius: 9px;
+  padding: 12px 30px;
+  color: #ffffff;
+  margin-top: 20px;
+}

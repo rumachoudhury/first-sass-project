@@ -1,0 +1,146 @@
+@import "../variables";
+@import "../mixins";
+
+.latest-section {
+  background-color: #f2f0f1;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: right;
+  gap: 20px;
+  padding: 20px;
+
+  .heading-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    // max-width: 1400px;
+
+    .latest-product-title {
+      font-size: 2rem;
+    }
+
+    .latest-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+
+    .product-card {
+      position: relative;
+      background-color: #fff;
+      border-radius: 8px;
+      //   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      grid-column: span 4 / span 4;
+
+      //  Styling for 4th card
+      &:nth-child(4) {
+        grid-column: span 6 / span 6; // Occupies 1 column
+        // width: 600px;
+      }
+
+      //   Styling for 5th card
+      &:nth-child(5) {
+        grid-column: span 6 / span 6; // Occupies 1 column
+        background-color: #0ca6b1 !important;
+        // width: 600px;
+      }
+
+      .product-image-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+
+        .product-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .heart-icon {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          width: 30px;
+          height: 30px;
+          z-index: 2;
+        }
+
+        .product-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: $secondary-color;
+          margin-left: 80px;
+          line-height: 1.2;
+          z-index: 2; // Ensures it stays above the image
+          opacity: 1;
+          transition: opacity 0.3s ease;
+
+          .product-title {
+            white-space: normal; // Allow text to wrap
+            overflow-wrap: break-word;
+            width: 148px;
+            text-align: center;
+          }
+
+          .latest-section h2,
+          p,
+          h3 {
+            margin: 5px 0;
+          }
+
+          .shop-now-container {
+            margin-top: 10px;
+
+            .shop-now-button {
+              padding: 10px 15px;
+              color: black;
+              border: none;
+              cursor: pointer;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .product-card {
+    border: 2px solid transparent; // Default border is transparent
+    transition: border 0.3s ease; //Smooth transition for the border
+  }
+  .product-card:hover {
+    border: 2px solid #007bff; //Change border color when mouse over
+    transform: scale(1.05); //Slight zoom-in effect
+  }
+}

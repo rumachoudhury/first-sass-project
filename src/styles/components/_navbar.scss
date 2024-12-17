@@ -1,0 +1,177 @@
+/* SCSS for Navbar component */
+@import "../variables";
+@import "../mixins";
+
+.navbar {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // justify-content: flex-start;
+  justify-items: flex-end;
+  align-items: center;
+  background-color: $secondary-color;
+  color: $text-color;
+
+  /* Section 1: Search, Language, and Icons */
+  .navbar-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    // border-bottom: 1px solid rgb(47, 47, 46);
+    height: 50px;
+  }
+
+  .navbar-search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 300px;
+  }
+
+  .navbar-search-icon {
+    position: absolute;
+    left: 10px;
+    font-size: $search-icon;
+    color: #888282;
+  }
+
+  .navbar-search {
+    padding: 8px 10px 8px 35px;
+    width: 100%;
+    // border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: $regular-text;
+    color: $text-color;
+    background-color: #2d2d2d;
+    border: none;
+  }
+
+  .navbar-language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  .navbar-icon {
+    margin-left: 10px;
+    font-size: $search-icon-size;
+  }
+
+  /* Section 2: Menu and Category Button */
+  .navbar-menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 200px;
+    // align-items: flex-start;
+  }
+
+  .navbar-toggle {
+    // font-size: 24px;
+    display: flex;
+    position: relative;
+    background: none;
+    border: none;
+    margin-bottom: 10px;
+  }
+  .navbar-toggle-icon {
+    height: $search-icon-size;
+    margin: 10px 0 0 20px;
+  }
+
+  .navbar-category-button {
+    background: none;
+    background-color: rgb(58, 58, 222);
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: $text-color;
+    border-radius: 8px;
+  }
+
+  .navbar__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-menu-open {
+    background-color: rgb(18, 20, 20);
+    position: absolute;
+    top: 40px;
+    // border: 1px solid rgb(53, 55, 58);
+    z-index: 10;
+    background-color: rgb(20, 18, 18);
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+  }
+  .navbar-menu-close {
+    display: none;
+  }
+
+  .navbar-item {
+    padding: 8px 16px;
+    color: $text-color;
+  }
+  .navbar-item:hover {
+    background-color: #8f8484;
+  }
+
+  /* Responsive Design */
+  @include smMaxBreakPoint {
+    .navbar-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .navbar-search {
+      width: 100%;
+    }
+
+    .navbar-toggle {
+      font-size: 30px;
+    }
+  }
+
+  @include smMinBreakPoint {
+    .navbar {
+      padding: 15px 30px;
+    }
+  }
+  //languages start
+  .language-dropdown {
+    position: absolute;
+    top: 100px;
+    background-color: rgb(20, 18, 18);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 0;
+    list-style: none;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  .language-item {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+
+  .language-item:hover {
+    background-color: #8f8484;
+  }
+}

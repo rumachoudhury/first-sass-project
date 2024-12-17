@@ -1,0 +1,24 @@
+// converted css in to scss
+
+//:hover inside the btn class its called nested
+.btn {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+  padding: 5px 15px;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    // Nesting the hover pseudo-class
+    border-color: #646cff;
+
+    @include smMaxBreakPoint {
+      // Including the mixin
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

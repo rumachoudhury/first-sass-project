@@ -1,0 +1,98 @@
+/* SCSS for hero component */
+@import "../variables";
+@import "../mixins";
+
+.hero-section {
+  display: flex;
+  // flex-direction: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  // padding: 20px;
+  background-color: $bg-color;
+
+  .new-arrival-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1;
+    // line-height: 18px;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 476px;
+    margin-right: 240px;
+
+    h1 {
+      font-size: 2rem;
+      // line-height: 35px;
+      font-family: Poppins;
+    }
+  }
+
+  .new-arrival {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    // flex-wrap: wrap;
+    gap: 2px;
+
+    // margin-right: 300px;
+
+    h5 {
+      margin-bottom: 8px;
+    }
+  }
+
+  .shop-btn {
+    background-color: $orange-color;
+    padding: 10px 20px;
+    color: $text-color;
+    border: none;
+    border-radius: 8px;
+    // margin-right: 300px;
+  }
+
+  .hero-shopping-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 32px;
+    position: relative;
+    // width: 95%;
+    padding-left: 120px;
+  }
+
+  .hero-shopping-info img {
+    position: absolute;
+    top: 0;
+  }
+  .hero-right-images {
+    margin-bottom: 100px;
+  }
+
+  .shoping-details {
+    border-right: 1px solid rgb(222, 220, 218);
+    padding: 10px;
+  }
+
+  .big-sale {
+    width: 160px;
+    margin-bottom: 20px;
+    margin-top: -120px;
+    padding-right: 80px;
+
+    .big-star {
+      width: 60px;
+      // padding-left: 20px;
+      // margin-top: -20px;
+    }
+  }
+  .big-star {
+    width: 60px;
+    padding-left: 80px;
+    margin-top: -20px;
+  }
+}

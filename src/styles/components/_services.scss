@@ -1,0 +1,42 @@
+@import "../variables";
+@import "../mixins";
+
+.service-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //   margin: auto;
+
+  .services-card {
+    width: 446.67px;
+    height: 156px;
+    // background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 51px;
+    border-radius: 10px;
+  }
+  .services-card img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    line-height: 1px;
+    padding-right: 50px;
+  }
+
+  h3 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

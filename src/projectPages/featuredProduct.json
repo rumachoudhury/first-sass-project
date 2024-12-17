@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "img": "/figma-images/black-t-shirt.png",
+      "title": "T-shirt with Tape Details",
+      "price": "$225.00",
+      "discountPercentage": "25% off",
+      "discountPrice": "$300.00",
+      "rating": 4.9
+    },
+    {
+      "id": "2",
+      "img": "/figma-images/image 570.png",
+      "title": "Latest Mini-split systems",
+      "price": "$225.00",
+      "discountPercentage": "25% off",
+      "discountPrice": "$300.00",
+      "rating": 4.9
+    },
+    {
+      "id": "3",
+      "img": "/figma-images/jeans.png",
+      "title": "T-shirt with Tape Details",
+      "price": "$225.00",
+      "discountPercentage": "25% off",
+      "discountPrice": "$300.00",
+      "rating": 4.9
+    },
+    {
+      "id": "4",
+      "img": "/figma-images/image 566.png",
+      "title": "12FT PVC Decorative Line",
+      "price": "$225.00",
+      "discountPercentage": "25% off",
+      "discountPrice": "$300.00",
+      "rating": 4.9
+    },
+    {
+      "id": "5",
+      "img": "/figma-images/image 569.png",
+      "title": "Single Zone Mini-split systems",
+      "price": "$225.00",
+      "discountPercentage": "25% off",
+      "discountPrice": "$300.00",
+      "rating": 4.9
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "trendyproducts": [
+    {
+      "id": 1,
+      "image": "/figma-images/living.png",
+      "badge": "/figma-images/25%.png",
+      "title": "Respira",
+      "description": "Outdoor bar table and stool",
+      "price": "$2.500.000",
+      "previousPrice": "$3.500.000",
+      "buttons": { "label": "Add to Cart", "className": "add-to-cart" },
+      "actionItems": [
+        {
+          "icon": "FaShareAlt",
+          "label": "Share"
+        },
+        {
+          "icon": "FaExchangeAlt",
+          "label": "Compare"
+        },
+        {
+          "icon": "FaHeart",
+          "label": "Like"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "public/figma-images/headphone.png",
+      "badge": "/figma-images/25%.png",
+      "title": "Respira",
+      "description": "Outdoor bar table and stool",
+      "price": "$2.500.000",
+      "previousPrice": "$3.500.000"
+    },
+    {
+      "id": 3,
+      "image": "public/figma-images/laptop.png",
+      "badge": "/figma-images/25%.png",
+      "title": "Respira",
+      "description": "Outdoor bar table and stool",
+      "price": "$2.500.000",
+      "previousPrice": "$3.500.000"
+    },
+    {
+      "id": 4,
+      "image": "public/figma-images/Image(10).png",
+      "badge": "/figma-images/25%.png",
+      "title": "Respira",
+      "description": "Outdoor bar table and stool",
+      "price": "$2.500.000",
+      "previousPrice": "$3.500.000"
+    },
+    {
+      "id": 5,
+      "image": "public/figma-images/graysweats.png",
+      "badge": "/figma-images/25%.png",
+      "title": "Respira",
+      "description": "Outdoor bar table and stool",
+      "price": "$2.500.000",
+      "previousPrice": "$3.500.000"
+    },
+    {
+      "id": 6,
+      "image": "public/figma-images/living2.png",
+      "badge": "/figma-images/25%.png",
+      "title": "Respira",
+      "description": "Outdoor bar table and stool",
+      "price": "$2.500.000",
+      "previousPrice": "$3.500.000"
+    },
+    {
+      "id": 7,
+      "image": "public/figma-images/exercise.png",
+      "badge": "/figma-images/25%.png",
+      "badgeStyle": {
+        "marginTop": "100px"
+      },
+      "title": "Respira",
+      "description": "Outdoor bar table and stool",
+      "price": "$2.500.000",
+      "previousPrice": "$3.500.000"
+    },
+    {
+      "id": 8,
+      "image": "public/figma-images/phone2.png",
+      "badge": "/figma-images/25%.png",
+      "title": "Respira",
+      "description": "Outdoor bar table and stool",
+      "price": "$2.500.000",
+      "previousPrice": "$3.500.000"
+    }
+  ]
+}

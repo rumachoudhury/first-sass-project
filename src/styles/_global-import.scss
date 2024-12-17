@@ -1,0 +1,24 @@
+//in the _global-import.scss file we have to import all SASS files
+
+@import "./variables";
+@import "./main";
+@import "./utilities.scss";
+@import "./typography";
+
+@import "./mixins.scss";
+
+//from component
+@import "../styles/components/axios";
+
+// from pages
+@import "../styles/pages/home.scss";
+
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/services";
+@import "./components/featuredProduct.scss";
+@import "./components/latestProduct.scss";
+@import "./components/trendyProduct";
+@import "./components/beautyProduct";
+@import "./components/productGallery";
+@import "./components/footer";
