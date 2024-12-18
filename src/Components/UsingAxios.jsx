@@ -1,6 +1,7 @@
 import React from "react";
-// import "./styles/axios.css"
-// import "../styles/axios.css";
+// import "./styles/axios.css";
+import axios from "axios";
+import "../styles/axios.css";
 
 function UsingAxios() {
   const handleFeatch = async () => {
@@ -12,7 +13,12 @@ function UsingAxios() {
 
   return (
     <div className="btn">
-      <button onClick={handleFeatch}>Featch Data</button>
+      <button
+        onClick={handleFeatch}
+        style={{ color: "red", padding: " 10px 20px", fontSize: "18px" }}
+      >
+        Featch Data
+      </button>
     </div>
   );
 }

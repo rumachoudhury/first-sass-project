@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="footer-section container-fluid">
+    <div className="footer-section">
       <div className="footer-top-section">
         <div className="footer-heading">
           <img src="/figma-images/footer.png" alt="Footer Logo" />
@@ -85,7 +85,7 @@ function Footer() {
         </div>
       </div>
       {/*bottom section start */}
-      <div className="footer-bottom-section ">
+      <div className="footer-bottom-section">
         <h3 className="all-right">
           2024. All right reserved design by techserve4u
         </h3>

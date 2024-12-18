@@ -17,7 +17,7 @@ function TrendyProduct() {
   return (
     <div>
       <h1 className="trendy-heading">Super Trendy Product</h1>
-      <div className="trendy-products">
+      <div className="trendy-products container">
         {trendyproducts.map((product) => (
           <div key={product.id} className="trendy-card">
             <div className="trendy-product-image">

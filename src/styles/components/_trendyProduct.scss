@@ -22,16 +22,18 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  width: 300px; // the issue was i didn't give the width
 
   .trendy-products .trendy-card:nth-child(7) {
-    margin-top: 30px;
+    // margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
 
 .trendy-product-image {
   position: relative;
   width: 100%;
-  height: 300px; // Ensure consistent image height
+  height: 300px;
   overflow: hidden;
 }
 

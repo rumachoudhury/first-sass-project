@@ -1,13 +1,9 @@
 .btn {
   display: flex;
   justify-content: center;
-  background-color: blue;
+  /* background-color: blue; */
   color: white;
-  padding: 5px 15px;
+  padding: 15px 15px;
   margin: 0 auto;
   cursor: pointer;
-}
-
-.btn:hover {
-  border-color: #646cff;
 }
