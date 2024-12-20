@@ -1,8 +1,6 @@
-import React from "react";
-
 function Services() {
   return (
-    <div className="service-section">
+    <div className="service-section container">
       <div className="services-card" style={{ backgroundColor: "#FFF6D9" }}>
         <img src="/figma-images/service.png" alt="Service Image" />
         <div className="text">
@@ -20,7 +18,7 @@ function Services() {
       <div className="services-card" style={{ backgroundColor: "#F5EBFC" }}>
         <img src="/figma-images/dollar.png" alt="" />
         <div className="text">
-          <p>100% Safe</p>
+          <p style={{ marginRight: "100px" }}>100% Safe</p>
           <h3>Secure Shopping</h3>
         </div>
       </div>

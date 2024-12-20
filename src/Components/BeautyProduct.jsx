@@ -1,16 +1,16 @@
-import React from "react";
 import BeautyProductData from "../projectPages/beautyProduct.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+// import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 function BeautyProduct() {
   const { beautyProducts } = BeautyProductData; // Destructure beautyProducts from JSON data
 
   return (
-    <div className="beauty-product container-fluid">
+    <div className="beauty-product">
       <div className="beauty-first-section">
         <h1 className="beauty-heading">
           50+ Beautiful & Modern <br /> Category Product
@@ -24,40 +24,48 @@ function BeautyProduct() {
         </div>
       </div>
 
-      <div
-        className="beauty-second-section"
-        style={{ position: "relative", width: "100%", height: "500px" }}
-      >
+      <div className="beauty-second-section">
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={20}
-          slidesPerView={3}
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={2}
+          spaceBetween={50}
           navigation={true}
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination, Navigation]}
+          className="mySwiper"
+          // modules={[Navigation, Pagination, Scrollbar, A11y]}
+          // spaceBetween={20}
+          // slidesPerView={3}
+          // navigation={true}
+          // navigation={{
+          //   nextEl: ".swiper-button-next",
+          //   prevEl: ".swiper-button-prev",
+          // }}
+          // pagination={{ clickable: true }}
+          // scrollbar={{ draggable: true }}
+          // centeredSlides={true} // To keep the active slide centered
         >
-          {beautyProducts.map((product) => (
-            <SwiperSlide key={product.id}>
-              <img
-                src={product.image}
-                alt={`Beauty Product ${product.id}`}
-                // style={{ width: "100%", height: "auto" }}
-                style={{
-                  width:
-                    product.id === 2 || product.id === 3 || product.id === 4
-                      ? "430px"
-                      : "100%", // Adjust width
-                  height: "auto", // Maintain aspect ratio
-                  marginTop: "0", // Align at the top
-                  marginBottom:
-                    product.id === 2 || product.id === 3 || product.id === 4
-                      ? "30px"
-                      : "0", // Reduce bottom margin for these images
-                }}
-              />
+          {beautyProducts.map((product, index) => (
+            <SwiperSlide
+              key={product.id}
+              className={index === 0 ? "first-slide active-slide" : ""}
+            >
+              <img src={product.image} alt={`Beauty Product ${product.id}`} />
+              <p> {product.scale}</p>
             </SwiperSlide>
           ))}
         </Swiper>
+        {/* <div className="swiper-button-next"></div>
+        <div className="swiper-button-prev"></div> */}
       </div>
     </div>
   );

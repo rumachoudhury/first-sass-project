@@ -12,11 +12,11 @@ function App() {
       <Home />
       {/* <Navbar /> */}
       {/* <Hero /> */}
-      <Routes>
-        {/* <Route path="/axios" element={<UsingAxios />} /> */}
-        {/* <Route path="/" element={<Home />} /> */}
-        {/* <Route path="navbar" element={<Navbar />} /> */}
-      </Routes>
+      {/* <Routes> */}
+      {/* <Route path="/axios" element={<UsingAxios />} /> */}
+      {/* <Route path="/" element={<Home />} /> */}
+      {/* <Route path="navbar" element={<Navbar />} /> */}
+      {/* </Routes> */}
     </>
   );
 }

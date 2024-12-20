@@ -5,13 +5,12 @@
 .navbar {
   width: 100%;
   margin: 0;
-  padding: 0;
-
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  // justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   // justify-content: flex-start;
-  justify-items: flex-end;
+  // justify-items: flex-end;
   align-items: center;
   background-color: $secondary-color;
   color: $text-color;
@@ -19,13 +18,14 @@
   /* Section 1: Search, Language, and Icons */
   .navbar-top {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 100px;
+    // justify-content: space-between;
+    // justify-content: center; // I fixed here
+    // margin-right: 100px;
     align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
+    // width: 100%;
+    // margin-bottom: 20px;
     // border-bottom: 1px solid rgb(47, 47, 46);
-    height: 50px;
+    // height: 50px;
   }
 
   .navbar-search-wrapper {
@@ -70,9 +70,12 @@
   /* Section 2: Menu and Category Button */
   .navbar-menu-container {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 200px;
+    // justify-content: center; //I fixed here
+    align-items: center; //I fixed here
+    // flex-direction: column;
+    flex-grow: 1;
+    // width: 100%;
+    // margin-left: 200px;
     // align-items: flex-start;
   }
 
@@ -82,11 +85,16 @@
     position: relative;
     background: none;
     border: none;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
   }
   .navbar-toggle-icon {
     height: $search-icon-size;
-    margin: 10px 0 0 20px;
+    margin: 10px 0 0 0;
+    align-items: center;
+    justify-content: center;
+    > img {
+      height: 10px;
+    }
   }
 
   .navbar-category-button {

@@ -1,6 +1,4 @@
-import React from "react";
 import { FaShareAlt, FaExchangeAlt, FaHeart } from "react-icons/fa";
-
 // Import the JSON data
 import trendyProductsData from "../projectPages/trendyProduct.json";
 
@@ -16,12 +14,16 @@ function TrendyProduct() {
 
   return (
     <div>
-      <h1 className="trendy-heading">Super Trendy Product</h1>
-      <div className="trendy-products container">
+      <h1 className="trendy-heading" style={{ marginTop: "40px" }}>
+        Super Trendy Product
+      </h1>
+      <div className="trendy-products">
         {trendyproducts.map((product) => (
           <div key={product.id} className="trendy-card">
             <div className="trendy-product-image">
-              <img src={product.image} alt={product.title} />
+              <div className="img-div">
+                <img src={product.image} alt={product.title} />
+              </div>
 
               {product.badge && (
                 <img className="badge" src={product.badge} alt="Badge" />
@@ -66,7 +68,10 @@ function TrendyProduct() {
           </div>
         ))}
       </div>
-      <div className="trendy-down-button">
+      <div
+        className="trendy-down-button"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
         <button>View More</button>
       </div>
     </div>

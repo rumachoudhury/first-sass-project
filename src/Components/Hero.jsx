@@ -1,23 +1,21 @@
-import React from "react";
-
 function Hero() {
   return (
     <div>
-      <div className="hero-section container">
+      <div className="hero-section ">
         <div className="new-arrival-section">
           <div className="new-arrival">
             <img
               className="star"
               src="figma-images/star.png"
               alt=""
-              style={{ width: "18px", height: "18px", marginTop: "20px" }}
+              style={{ width: "18px", height: "18px" }}
             />
             <h5 style={{ color: "#F05A2A" }}>New Arrival</h5>
             <img
               className="star"
               src="figma-images/star.png"
               alt=""
-              style={{ width: "18px", height: "18px", marginTop: "20px" }}
+              style={{ width: "18px", height: "18px" }}
             />
           </div>
           <div className="hero-description">

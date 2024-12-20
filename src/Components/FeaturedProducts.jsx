@@ -24,27 +24,29 @@ function FeaturedProducts() {
         >
           {products.map((product) => (
             <SwiperSlide key={product.id}>
-              <div className="product-card">
-                <div className="feature-images">
-                  <img src="/figma-images/heart.png" alt="Heart Icon" />
+              <div className="product">
+                <div className="product-card">
+                  <div className="feature-images">
+                    <img src="/figma-images/heart.png" alt="Heart Icon" />
+                    <img
+                      src="/figma-images/25%.png"
+                      alt="Discount Badge"
+                      className="discount-image"
+                    />
+                  </div>
                   <img
-                    src="/figma-images/25%.png"
-                    alt="Discount Badge"
-                    className="discount-image"
+                    src={product.img}
+                    alt={product.title}
+                    className="product-img"
                   />
-                </div>
-                <img
-                  src={product.img}
-                  alt={product.title}
-                  className="product-img"
-                />
-                <p className="product-title">{product.title}</p>
-                <div className="price">
-                  <p className="product-price">{product.price}</p>
-                  <p className="product-discount">{product.discountPrice}</p>
-                  <div className="product-rating">
-                    <img src="/figma-images/raiting-star.png" alt="" />
-                    <p>({product.rating})</p>
+                  <p className="product-title">{product.title}</p>
+                  <div className="price">
+                    <p className="product-price">{product.price}</p>
+                    <p className="product-discount">{product.discountPrice}</p>
+                    <div className="product-rating">
+                      <img src="/figma-images/raiting-star.png" alt="" />
+                      <p>({product.rating})</p>
+                    </div>
                   </div>
                 </div>
               </div>

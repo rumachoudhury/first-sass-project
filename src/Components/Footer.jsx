@@ -14,7 +14,6 @@ function Footer() {
             <p>Australia</p>
           </div>
         </div>
-
         <div className="categories-counter">
           <h2 style={{ color: "#000000", fontSize: "24px" }}>Categories</h2>
           <ul className="categories-list">
@@ -48,9 +47,6 @@ function Footer() {
             <li>
               <a href="/track-order">Track Your Order</a>
             </li>
-            {/* <li>Support</li>
-            <li>Your Quotes</li>
-            <li>Track your Order</li> */}
           </ul>
         </div>
         <div className="follow-us-counter">
@@ -93,9 +89,6 @@ function Footer() {
           <a href="/privacy">Setting & Privacy</a>
           <a href="/faqs">FAQs</a>
           <a href="/services">Services</a>
-          {/* <p>Setting & Privacy</p>
-          <p>Faqs</p>
-          <p>Services</p> */}
         </div>
       </div>
     </div>

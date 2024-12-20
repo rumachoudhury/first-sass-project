@@ -1,19 +1,19 @@
-import React from "react";
 import productData from "../projectPages/latestProduct.json";
 
 function LatestProduct() {
   const { latestProducts } = productData;
   return (
     <div>
-      <div className="latest-section container">
+      <div className="latest-section ">
         <div className="heading-btn">
           <h1 className="latest-product-title">Latest Product</h1>
           <button className="latest-button">View More</button>
         </div>
         <div className="product-container">
-          {latestProducts.map((product, index) => (
+          {latestProducts.map((product) => (
             <div key={product.id} className="product-card">
-              <div className="product-image-container">
+              <div className="product-image-container product">
+                {" "}
                 <img
                   src="/figma-images/heart.png"
                   alt="Heart icon"

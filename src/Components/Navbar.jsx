@@ -20,7 +20,33 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar container-fluid">
+    <nav className="navbar ">
+      {/* Section 2: Menu */}
+      <div className="navbar-menu-container navbar-bottom">
+        {/* Image for Menu Toggle */}
+        <div className="navbar-toggle" onClick={toggleMenu}>
+          <img
+            src="/figma-images/Vector.png"
+            alt="Menu"
+            className="navbar-toggle-icon"
+          />
+          <button className="navbar-category-button">
+            Category <FaAngleDown />
+          </button>
+          <ul
+            className={`navbar__menu ${
+              isMenuOpen ? "navbar-menu-open " : "navbar-menu-close"
+            }`}
+          >
+            <li className="navbar-item">Campaigns</li>
+            <li className="navbar-item">Brands</li>
+            <li className="navbar-item">Categories</li>
+            <li className="navbar-item">Help</li>
+            <li className="navbar-item">FAQ</li>
+          </ul>
+        </div>
+        {/* Menu List end*/}
+      </div>
       {/* Section 1: Search, Language, and Icons */}
       <div className="navbar-section navbar-top">
         <div className="navbar-search-wrapper">
@@ -46,34 +72,6 @@ const Navbar = () => {
         <FaMoon className="navbar-icon navbar-icon-moon" title="Dark Mode" />
         <FaShoppingCart className="navbar-icon navbar-icon-cart" title="Cart" />
         <FaUser className="navbar-icon navbar-icon-user" title="User" />
-      </div>
-
-      {/* Section 2: Menu */}
-      <div className="navbar-menu-container navbar-bottom">
-        {/* Image for Menu Toggle */}
-        <div className="navbar-toggle" onClick={toggleMenu}>
-          <img
-            src="/figma-images/Vector.png"
-            alt="Menu"
-            className="navbar-toggle-icon"
-          />
-          <button className="navbar-category-button">
-            Category <FaAngleDown />
-          </button>
-          <ul
-            className={`navbar__menu ${
-              isMenuOpen ? "navbar-menu-open " : "navbar-menu-close"
-            }`}
-          >
-            <li className="navbar-item">Campaigns</li>
-            <li className="navbar-item">Brands</li>
-            <li className="navbar-item">Categories</li>
-            <li className="navbar-item">Help</li>
-            <li className="navbar-item">FAQ</li>
-          </ul>
-        </div>
-
-        {/* Menu List */}
       </div>
     </nav>
   );
