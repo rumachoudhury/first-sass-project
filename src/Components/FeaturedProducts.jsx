@@ -16,7 +16,7 @@ function FeaturedProducts() {
       <div className="product-details">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={50} // Adjust spacing
+          spaceBetween={30} // Adjust spacing
           slidesPerView={4} // Number of cards per view
           navigation={true}
           pagination={{ clickable: true }}

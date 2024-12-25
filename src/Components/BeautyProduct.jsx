@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
+// import "swiper/scss/effect-coverflow";
 // import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
@@ -30,7 +31,7 @@ function BeautyProduct() {
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={2}
-          spaceBetween={50}
+          spaceBetween={20}
           navigation={true}
           coverflowEffect={{
             rotate: 50,
@@ -60,7 +61,7 @@ function BeautyProduct() {
               className={index === 0 ? "first-slide active-slide" : ""}
             >
               <img src={product.image} alt={`Beauty Product ${product.id}`} />
-              <p> {product.scale}</p>
+              {/* <p> {product.scale}</p> */}
             </SwiperSlide>
           ))}
         </Swiper>

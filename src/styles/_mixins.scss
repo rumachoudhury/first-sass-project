@@ -1,4 +1,4 @@
-@import "./variables"; // in mixins we hae to import the variables
+@import "./variables"; // in mixins we have to import the variables
 
 @mixin smMinBreakPoint {
   @media (min-width: #{$screen-sm}) {

@@ -25,6 +25,7 @@ function LatestProduct() {
                   className="product-image"
                 />
                 <div className="product-overlay" style={product.style}>
+                  {/* Limited Stock text for second image*/}
                   <h6 className="text">{product.text}</h6>
                   <h2 className="product-title">{product.title}</h2>
                   <p>{product.details}</p>

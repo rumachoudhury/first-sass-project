@@ -4,7 +4,7 @@ import axios from "axios";
 import "../styles/axios.css";
 
 function UsingAxios() {
-  const handleFeatch = async () => {
+  const handleFetch = async () => {
     axios
       .get("https://jsonplaceholder.typicode.com/users")
       .then((response) => console.log(response.data))
@@ -14,10 +14,10 @@ function UsingAxios() {
   return (
     <div className="btn">
       <button
-        onClick={handleFeatch}
+        onClick={handleFetch}
         style={{ color: "red", padding: " 10px 20px", fontSize: "18px" }}
       >
-        Featch Data
+        Fetch Data
       </button>
     </div>
   );

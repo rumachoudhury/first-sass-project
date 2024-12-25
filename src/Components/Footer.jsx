@@ -29,10 +29,6 @@ function Footer() {
             <li>
               <a href="/resources">Resources</a>
             </li>
-            {/* <li>About Us</li>
-            <li>Shop</li>
-            <li>Contact Us</li>
-            <li>Resources</li> */}
           </ul>
         </div>
         <div className="account-counter">
