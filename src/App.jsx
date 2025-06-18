@@ -1,8 +1,8 @@
-import { useState } from "react";
-import viteLogo from "/vite.svg";
+// import { useState } from "react";
+// import viteLogo from "/vite.svg";
 import "./app.scss";
-import { Route, Routes } from "react-router-dom";
-import UsingAxios from "./Components/UsingAxios";
+// import { Route, Routes } from "react-router-dom";
+// import UsingAxios from "./Components/UsingAxios";
 // import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 
