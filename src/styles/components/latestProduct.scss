@@ -1,5 +1,7 @@
-@import "../variables";
-@import "../mixins";
+// @import "../variables";
+// @import "../mixins";
+@use "../variables" as vars;
+@use "../mixins" as mixins;
 
 .latest-section {
   background-color: #f2f0f1;
@@ -98,7 +100,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          color: $secondary-color;
+          color: vars.$secondary-color;
           // margin-left: 80px;
           line-height: 1.2;
           z-index: 2; // Ensures it stays above the image

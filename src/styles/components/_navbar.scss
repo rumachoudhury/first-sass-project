@@ -1,6 +1,9 @@
 /* SCSS for Navbar component */
-@import "../variables";
-@import "../mixins";
+
+// @import "../mixins";
+// @use "../global-import" as *;
+@use "../variables" as vars;
+@use "../mixins" as mixins;
 
 .navbar {
   width: 100%;
@@ -10,8 +13,10 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  background-color: $secondary-color; //call the variables
-  color: $text-color;
+  // background-color: $secondary-color; //call the variables
+  background-color: vars.$secondary-color;
+  // color: $text-color;
+  color: vars.$text-color;
 
   /* Section 1: Search, Language, and Icons */
   .navbar-top {
@@ -30,7 +35,8 @@
   .navbar-search-icon {
     position: absolute;
     left: 10px;
-    font-size: $search-icon;
+    // font-size: $search-icon;
+    font-size: vars.$search-icon;
     color: #888282;
   }
 
@@ -39,8 +45,10 @@
     width: 100%;
     // border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: $regular-text; //calling the variables
-    color: $text-color;
+    // font-size: $regular-text; //calling the variables
+    font-size: vars.$regular-text;
+    // color: $text-color;
+    color: vars.$text-color;
     background-color: #2d2d2d;
     border: none;
   }
@@ -55,13 +63,13 @@
 
   .navbar-icon {
     margin-left: 10px;
-    font-size: $search-icon-size;
+    font-size: vars.$search-icon-size;
   }
 
   /* Section 2: Menu and Category Button */
   .navbar-menu-container {
     display: flex;
-    align-items: center; //I fixed here
+    align-items: center;
     flex-grow: 1;
   }
 
@@ -73,7 +81,7 @@
     border: none;
   }
   .navbar-toggle-icon {
-    height: $search-icon-size;
+    height: vars.$search-icon-size;
     margin: 10px 0 0 0;
     align-items: center;
     justify-content: center;
@@ -92,7 +100,8 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    color: $text-color;
+    color: vars.$text-color;
+
     border-radius: 8px;
   }
 
@@ -119,14 +128,14 @@
 
   .navbar-item {
     padding: 8px 16px;
-    color: $text-color;
+    color: vars.$text-color;
   }
   .navbar-item:hover {
     background-color: #8f8484;
   }
 
   /* Responsive Design */
-  @include smMaxBreakPoint {
+  @include mixins.smMaxBreakPoint {
     .navbar-top {
       flex-direction: column;
       align-items: flex-start;
@@ -141,7 +150,7 @@
     }
   }
 
-  @include smMinBreakPoint {
+  @include mixins.smMinBreakPoint {
     .navbar {
       padding: 15px 30px;
     }

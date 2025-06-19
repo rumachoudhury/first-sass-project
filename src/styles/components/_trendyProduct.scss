@@ -1,5 +1,7 @@
-@import "../variables";
-@import "../mixins";
+// @import "../variables";
+// @import "../mixins";
+@use "../variables" as vars;
+@use "../mixins" as mixins;
 
 * {
   margin: 0;
@@ -9,7 +11,7 @@
 .trendy-heading {
   text-align: center;
   font-size: 40px;
-  font-family: $poppins;
+  font-family: vars.$poppins;
   font-weight: 700;
   margin-bottom: 2rem;
   color: #3a3a3a;

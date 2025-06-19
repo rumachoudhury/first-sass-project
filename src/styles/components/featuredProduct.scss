@@ -1,10 +1,12 @@
-@import "../variables";
-@import "../mixins";
+// @import "../variables";
+// @import "../mixins";
+@use "../variables" as vars;
+@use "../mixins" as mixins;
 
 .product-counter {
   text-align: center;
   .feature-title {
-    font-family: $poppins;
+    font-family: vars.$poppins;
     font-weight: 700;
     font-size: 2rem;
     color: #333;
@@ -47,7 +49,7 @@
       .product-title {
         font-family: Be Vietnam Pro;
         font-size: 14px;
-        color: $small-text-color; //call the variables
+        color: vars.$small-text-color; //call the variables
         margin-bottom: 10px;
       }
 
@@ -58,7 +60,7 @@
       }
       .product-discount {
         font-size: 14px;
-        color: $small-text-color;
+        color: vars.$small-text-color;
         text-decoration: line-through; // Add line through the original price
         // margin: 0px 40px 0px 0px;
       }

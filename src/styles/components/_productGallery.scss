@@ -1,5 +1,7 @@
-@import "../variables";
-@import "../mixins";
+// @import "../variables";
+// @import "../mixins";
+@use "../variables" as vars;
+@use "../mixins" as mixins;
 
 .gallery-section {
   .gallery-heading {

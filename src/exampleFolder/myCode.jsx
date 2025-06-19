@@ -1,58 +1,58 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import productData from "../projectPages/featuredProduct.json";
-import "swiper/scss";
+// import React from "react";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import productData from "../projectPages/featuredProduct.json";
+// import "swiper/scss";
 
-function FeaturedProducts() {
-  const { products } = productData; // Destructure products from the JSON data
+// function FeaturedProducts() {
+//   const { products } = productData; // Destructure products from the JSON data
 
-  return (
-    <div className="product-counter  container">
-      <h1 className="feature-title">Featured Products</h1>
+//   return (
+//     <div className="product-counter  container">
+//       <h1 className="feature-title">Featured Products</h1>
 
-      <div className="product-details">
-        <Swiper
-          spaceBetween={10} // Adjust spacing
-          slidesPerView={4} // Number of cards per view
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          {products.map((product) => (
-            <SwiperSlide key={product.id}>
-              <div className="product-card">
-                <div className="feature-images">
-                  <img src="/figma-images/heart.png" alt="Heart Icon" />
-                  <img
-                    src="/figma-images/25%.png"
-                    alt="Discount Badge"
-                    className="discount-image"
-                  />
-                </div>
-                <img
-                  src={product.img}
-                  alt={product.title}
-                  className="product-img"
-                />
-                <p className="product-title">{product.title}</p>
-                <div className="price">
-                  <p className="product-price">{product.price}</p>
-                  <p className="product-discount">{product.discountPrice}</p>
-                  {/* <p className="product-rating">⭐ ({product.rating})</p> */}
-                  <div className="product-rating">
-                    <img src="public/figma-images/raiting-star.png" alt="" />
-                    <p>({product.rating})</p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </div>
-  );
-}
+//       <div className="product-details">
+//         <Swiper
+//           spaceBetween={10} // Adjust spacing
+//           slidesPerView={4} // Number of cards per view
+//           onSlideChange={() => console.log("slide change")}
+//           onSwiper={(swiper) => console.log(swiper)}
+//         >
+//           {products.map((product) => (
+//             <SwiperSlide key={product.id}>
+//               <div className="product-card">
+//                 <div className="feature-images">
+//                   <img src="/figma-images/heart.png" alt="Heart Icon" />
+//                   <img
+//                     src="/figma-images/25%.png"
+//                     alt="Discount Badge"
+//                     className="discount-image"
+//                   />
+//                 </div>
+//                 <img
+//                   src={product.img}
+//                   alt={product.title}
+//                   className="product-img"
+//                 />
+//                 <p className="product-title">{product.title}</p>
+//                 <div className="price">
+//                   <p className="product-price">{product.price}</p>
+//                   <p className="product-discount">{product.discountPrice}</p>
+//                   {/* <p className="product-rating">⭐ ({product.rating})</p> */}
+//                   <div className="product-rating">
+//                     <img src="public/figma-images/raiting-star.png" alt="" />
+//                     <p>({product.rating})</p>
+//                   </div>
+//                 </div>
+//               </div>
+//             </SwiperSlide>
+//           ))}
+//         </Swiper>
+//       </div>
+//     </div>
+//   );
+// }
 
-export default FeaturedProducts;
+// export default FeaturedProducts;
 
 //____________________________________________________________________//
 // import React from "react";

@@ -1,6 +1,7 @@
-@import "../variables";
-@import "../mixins";
-
+// @import "../variables";
+// @import "../mixins";
+@use "../variables" as vars;
+@use "../mixins" as mixins;
 * {
   margin: 0;
   padding: 0;

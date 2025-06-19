@@ -1,14 +1,15 @@
 /* SCSS for hero component */
-@import "../variables";
-@import "../mixins";
-
+// @import "../variables";
+// @import "../mixins";
+@use "../variables" as vars;
+@use "../mixins" as mixins;
 .hero-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   // margin-top: 30px;   //I fixed here
-  background-color: $bg-color;
+  background-color: vars.$bg-color;
   border-radius: 10px;
 
   .new-arrival-section {
@@ -44,9 +45,9 @@
   }
 
   .shop-btn {
-    background-color: $orange-color; //call the variables
+    background-color: vars.$orange-color; //call the variables
     padding: 10px 20px;
-    color: $text-color; //call the variables
+    color: vars.$text-color; //call the variables
     border: none;
     border-radius: 8px;
     margin-top: 15px;
