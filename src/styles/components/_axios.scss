@@ -1,6 +1,8 @@
 // converted css in to scss
 
 //:hover inside the btn class its called nested
+
+@use "../mixins" as mixins;
 .btn {
   display: flex;
   justify-content: center;
@@ -14,7 +16,7 @@
     // Nesting the hover pseudo-class
     border-color: #646cff;
 
-    @include smMaxBreakPoint {
+    @include mixins.smMaxBreakPoint {
       // Including the mixin
       display: flex;
       flex-direction: column;

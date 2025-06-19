@@ -1,7 +1,20 @@
 // copied from figms
+// .primary-heading {
+//   font-family: $poppins;
+//   font-size: $primary-heading; //call the $primary-heading
+//   font-weight: 700;
+//   line-height: 60px;
+//   text-align: left;
+//   text-underline-position: from-font;
+//   text-decoration-skip-ink: none;
+// }
+// ------------
+// @use "../variables" as vars;
+@use "./variables" as vars;
+
 .primary-heading {
-  font-family: $poppins;
-  font-size: $primary-heading; //call the $primary-heading
+  font-family: vars.$poppins;
+  font-size: vars.$primary-heading;
   font-weight: 700;
   line-height: 60px;
   text-align: left;

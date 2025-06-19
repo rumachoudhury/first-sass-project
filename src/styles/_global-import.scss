@@ -1,24 +1,48 @@
 //in the _global-import.scss file we have to import all SASS files
 
-@import "./variables";
-@import "./main";
-@import "./utilities.scss";
-@import "./typography";
+// @import "./variables";
+// @import "./main";
+// @import "./utilities.scss";
+// @import "./typography";
 
-@import "./mixins.scss";
+// @import "./mixins.scss";
 
-//from component
-@import "../styles/components/axios";
+// //from component
+// @import "../styles/components/axios";
 
-// from pages
-@import "../styles/pages/home.scss";
+// // from pages
+// @import "../styles/pages/home.scss";
 
-@import "./components/navbar";
-@import "./components/hero";
-@import "./components/services";
-@import "./components/featuredProduct.scss";
-@import "./components/latestProduct.scss";
-@import "./components/trendyProduct";
-@import "./components/beautyProduct";
-@import "./components/productGallery";
-@import "./components/footer";
+// @import "./components/navbar";
+// @import "./components/hero";
+// @import "./components/services";
+// @import "./components/featuredProduct.scss";
+// @import "./components/latestProduct.scss";
+// @import "./components/trendyProduct";
+// @import "./components/beautyProduct";
+// @import "./components/productGallery";
+// @import "./components/footer";
+
+// -------------------
+// styles/_index.scss (or keep _global-import.scss)
+// @forward "./variables";
+@use "./variables" as vars;
+@forward "./main";
+@forward "./utilities";
+@forward "./typography";
+@forward "./mixins";
+
+// Components
+@forward "./components/navbar";
+@forward "./components/hero";
+@forward "./components/services";
+@forward "./components/featuredProduct";
+@forward "./components/latestProduct";
+@forward "./components/trendyProduct";
+@forward "./components/beautyProduct";
+@forward "./components/productGallery";
+@forward "./components/footer";
+@forward "./components/axios"; // Move axios here if style-based
+
+// Pages
+@forward "./pages/home";

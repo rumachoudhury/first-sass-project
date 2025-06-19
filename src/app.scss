@@ -1,13 +1,7 @@
-@import "./styles/global-import";
+// @import "./styles/global-import";
+// @use "./styles/global-import" as *;
+@use "./styles/_global-import.scss";
 
-// #root {
-//   // max-width: 1280px;
-//   max-width: 1400px;
-
-//   margin: 0 auto;
-//   padding: 2rem;
-//   text-align: center;
-// }
 * {
   margin: 0;
   padding: 0;

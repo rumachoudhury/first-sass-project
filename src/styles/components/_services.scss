@@ -1,6 +1,5 @@
-@import "../variables";
-@import "../mixins";
-
+@use "../variables" as vars;
+@use "../mixins" as mixins;
 .service-section {
   display: flex;
   justify-content: space-around;
